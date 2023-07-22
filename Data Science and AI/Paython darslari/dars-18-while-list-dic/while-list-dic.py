@@ -55,7 +55,7 @@ Created on Sun Jul 16 21:44:26 2023
 #  mahuslot narhini chiqaring, aks holda "Bizda bu mahsulot yo'q" degan xabarni kor'sating.
 
 buyurtmalar = []
-while True:
+while True: #buyutma qabul qilamiz
     buyurtma = input("Buyurtmangiz: ")
     print("Chiqish uchun 'tugat' deb yozing")
     if buyurtma == 'tugat':
@@ -72,14 +72,14 @@ ombor = {
     'olma': 5000
 }
 narx = 0
-for buyurtma in buyurtmalar:
+for buyurtma in buyurtmalar:    #buyurtma omborda bormi yo'qmi tekshiramiz
     if buyurtma in ombor:
         print(f"{buyurtma} ning narxni {ombor[buyurtma]}")
         narx += ombor[buyurtma]
     else:
         print(f'{buyurtma} do\'konimizda yo\'q')
 
-print("Siz",end=' ')
+print("Siz",end=' ') #chek chiqaramiz
 for buyurtma in buyurtmalar:
     if buyurtma in ombor:
         print(buyurtma,end=', ')
