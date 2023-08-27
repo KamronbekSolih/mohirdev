@@ -1,0 +1,11 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+aiogram = "*"
+googletrans = "==3.1.0a0"
+fuzzywuzzy = "*"
+
+[dev-packages]
