@@ -7,5 +7,7 @@ name = "pypi"
 aiogram = "~=2.14"
 googletrans = "==3.1.0a0"
 fuzzywuzzy = "*"
+transliterate = "*"
+cyrtranslit = "*"
 
 [dev-packages]
