@@ -1,6 +1,11 @@
-import re 
+from uzwords import words
+import checkWord
 
-def has_cyrillic(text):
-    return bool(re.search('[a-zA-Z]', text))
+uzbeklatinwords = []
+for word in words:
+    word = checkWord.toLatin(word)
+    uzbeklatinwords.append(f""{word}"")
+to_string = "["+',\n'.join(uzbeklatinwords)+"]"
 
-print(has_cyrillic("salom"))
+with open("uzwordslatin.py",'w') as file:
+    file.write(to_string) 

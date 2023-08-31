@@ -42,7 +42,8 @@ class UzbekLanguagePack(TranslitLanguagePack):
     u"ё": u"yo",
     u"ю": u"yu",
     u"ю": u"yu",
-    u"ц": u"ts"
+    u"ц": u"ts",
+    u"ь":u""
 
 
     }
